@@ -1,0 +1,346 @@
+﻿{
+    "Categorization": [
+        {
+            "Section": "Health & Security",
+            "Category": "Health",
+            "Activity": "Nutrition"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Health",
+            "Activity": "Physical activity"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Health",
+            "Activity": "Health monitoring"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Health",
+            "Activity": "Health inscurance"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Health",
+            "Activity": "First Aid Knowlegde"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Health",
+            "Activity": "Sleep"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Safety & Security",
+            "Activity": "Physical security"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Safety & Security",
+            "Activity": "Self-defence"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Safety & Security",
+            "Activity": "Disaster handling"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Safety & Security",
+            "Activity": "Threat handling"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Safety & Security",
+            "Activity": "Information security"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Safety & Security",
+            "Activity": "Digital estate"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Genercal financial plan"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Periodic financial statements"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Emergency Funds"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Debt handling"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Financial protection & Insurance"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Tax programming"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Pension plan"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Work skills"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Emploee or professional skills"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Professional profile"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Professional image"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Attracting employers or customers"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Colleague relationships"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Network & mentors"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work",
+            "Activity": "Study for work & Improvement"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Investments",
+            "Activity": "Stock exchange & paper assets"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Investments",
+            "Activity": "Real estate"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Investments",
+            "Activity": "Business or company stocks"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Investments",
+            "Activity": "Investment education & placement"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Products & Services",
+            "Activity": "Products, Services, Books, Software, Patents"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Self Image",
+            "Activity": "Self image"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Self Image",
+            "Activity": "Style & Character"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Self Image",
+            "Activity": "Online Social networks"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Family",
+            "Activity": "Own family"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Family",
+            "Activity": "Parent family"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Sexual",
+            "Activity": "Attraction & Success"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Sexual",
+            "Activity": "Relationship management"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Social",
+            "Activity": "Friends"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Social",
+            "Activity": "Social networking"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Social",
+            "Activity": "Social skills"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Everyday Life",
+            "Activity": "Everyday life"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Everyday Life",
+            "Activity": "Fun"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Everyday Life",
+            "Activity": "Vacation"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Everyday Life",
+            "Activity": "Ideal day"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Productivity",
+            "Activity": "Life Plan"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Productivity",
+            "Activity": "Goals"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Productivity",
+            "Activity": "Organizing, Productivity & Time management"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Productivity",
+            "Activity": "Periodic routines"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Improvement",
+            "Activity": "Personal Study"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Improvement",
+            "Activity": "Self improvement"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Hobbies",
+            "Activity": "Hobbies"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Estate plan"
+        }
+    ],
+    "Categories": [
+        {
+            "Section": "Health & Security",
+            "Category": "Health"
+        },
+        {
+            "Section": "Health & Security",
+            "Category": "Safety & Security"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Work"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Investments"
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Products & Services"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Self Image"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Family"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Sexual"
+        },
+        {
+            "Section": "Relationships",
+            "Category": "Social"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Everyday Life"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Productivity"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Improvement"
+        },
+        {
+            "Section": "Lifestyle",
+            "Category": "Hobbies"
+        }
+    ],
+    "Sections": [
+        {
+            "Section": "Health & Security"
+        },
+        {
+            "Section": "Wealth"
+        },
+        {
+            "Section": "Relationships"
+        },
+        {
+            "Section": "Lifestyle"
+        }
+    ]
+}

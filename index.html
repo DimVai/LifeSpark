@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LifeSpark</title>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/dim-structure.css">
+    <link rel="stylesheet" media="screen" href="css/navigation.css">
+
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script defer src="https://www.w3schools.com/appml/2.0.3/appml.js"></script> -->
+    <script defer src="js/navigation.js"></script>
+
+
+
+</head>
+<body class="scrollable p-lg-3">
+    <div class="container ">
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="#">LifeSpark</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse justify-content-end" id="topNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+        
+    <div class="main-structure">
+
+    <aside class="aside-categorization card bg-dark border-dark">
+    
+      <div class="nav-heading standard-inline-2-structure">
+        <h2 class="card-header">Life Categorization</h2>
+        <button class="btn btn-secondary d-lg-none m-2" type="button" data-bs-toggle="collapse" data-bs-target="#cat-navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewbox="0 0 16 16">
+                <title>Expand</title>
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+            </svg></button>
+      </div>
+
+
+
+      <nav class="navigation bd-links collapse d-lg-block" id="cat-navigation">
+
+        <div class="nav-basic-life m-3 d-flex flex-column card">
+          <a class="basic-life-link link-secondary" href="#">Review Life priorities</a>
+          <a class="basic-life-link link-secondary" href="#">Life Assessment</a>
+        </div>
+
+          <ul class="nav-list list-unstyled collapse" appml-data="Categories">
+              <li class="nav-section" ><span class="nav-section-title"> Health and Security</span>
+                  <ul class="nav-section-list list-unstyled mx-4">
+                      <li class="nav-category" appml-repeat="Health"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
+                  </ul></li>
+              <li class="nav-section"><span class="nav-section-title">Wealth</span>
+                  <ul class="nav-section-list list-unstyled mx-4">
+                      <li class="nav-category" appml-repeat="Wealth"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
+                  </ul></li>
+              <li class="nav-section"><span class="nav-section-title">Relationships</span>
+                  <ul class="nav-section-list list-unstyled mx-4">
+                      <li class="nav-category" appml-repeat="Relationships"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
+                  </ul></li>
+              <li class="nav-section "><span class="nav-section-title">Lifestyle</span>
+                  <ul class="nav-section-list list-unstyled mx-4">
+                      <li class="nav-category" appml-repeat="Lifestyle"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
+                  </ul></li>
+          </ul>
+      </nav>
+
+      <script>
+          var Categories = {
+          "Health":[
+              {"Category":"Health","ID":"HH"},
+              {"Category":"Safety and Security","ID":"HS"},
+              ],
+          "Wealth":[
+              {"Category":"Financial Strategy","ID":"WF"},
+              {"Category":"Work","ID":"WW"},
+              {"Category":"Investments","ID":"WI"},
+              {"Category":"Products and Services","ID":"WP"},
+          ],
+          "Relationships":[
+              {"Category":"Self Image","ID":"RS"},
+              {"Category":"Family","ID":"RF"},
+              {"Category":"Sexual","ID":"RS"},
+              {"Category":"Social","ID":"RC"},
+          ],
+          "Lifestyle":[
+              {"Category":"Everyday Life","ID":"LL"},
+              {"Category":"Productivity","ID":"LP"},
+              {"Category":"Improvement","ID":"LI"},
+              {"Category":"Hobbies","ID":"LH"},
+          ]
+          };
+      </script>
+
+
+    </aside>
+
+
+
+    <main class="main card bg-dark border-info">
+      <div class="app-content">
+        <div class="card bg-dark border-secondary">
+          <h1>Content</h1>
+      </div>
+      </div>
+
+    </main>
+
+</div>
+</div>
+
+
+</body>
+</html>
