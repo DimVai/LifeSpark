@@ -98,6 +98,7 @@
 
 [data-microtip-position="top"]:hover::after {
   transform: translate3d(-50%, 0px, 0);
+
 }
 
 [data-microtip-position="top-right"]::after {
@@ -111,24 +112,6 @@
 
 
 /* ------------------------------------------------
-  [3] Size
--------------------------------------------------*/
-[data-microtip-size="small"]::after {
-  white-space: initial;
-  width: 80px;
-}
-
-[data-microtip-size="medium"]::after {
-  white-space: initial;
-  width: 150px;
-}
-
-[data-microtip-size="large"]::after {
-  white-space: initial;
-  width: 260px;
-}
-
-/* ------------------------------------------------
   [3] Color
 -------------------------------------------------*/
 
@@ -140,4 +123,7 @@
 }
 [data-microtip-background="green"]:after {
   background-color: green;
+}
+[data-microtip-color="purple"]:after {
+  background-color: purple;
 }

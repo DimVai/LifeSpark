@@ -1,0 +1,22 @@
+
+/***************   CONTENT CARDS     ***************/
+
+.outer-card{
+    padding: 1rem;
+}
+
+.content-card{
+    padding: 2rem;
+}
+
+
+
+
+.assessment-slider, .assessment-selection{
+    /* direction: rtl; */
+    width: 20vw;
+}
+
+.important-category{
+    color: red;
+}

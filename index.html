@@ -11,12 +11,16 @@
     <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
     <link rel="stylesheet" media="screen" href="css/dim-structure.css">
     <link rel="stylesheet" media="screen" href="css/navigation.css">
+    <link rel="stylesheet" media="screen" href="css/cards.css">
 
-
+    <!-- <script defer src="js/dim-state.js"></script> -->
+    <script defer src="js/dim-ML.js"></script>
+    <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- <script defer src="https://www.w3schools.com/appml/2.0.3/appml.js"></script> -->
-    <script defer src="js/navigation.js"></script>
+    <!-- <script defer src="js/dim-bootstrap-plus.js"></script> -->
+    <script defer src="js/script.js"></script>
+    <script defer src="js/microtip.js"></script>
 
 
 
@@ -30,7 +34,7 @@
             <div class="container-fluid">
 
               <a class="navbar-brand" href="#">LifeSpark</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
           
@@ -51,7 +55,7 @@
                     <a class="nav-link" href="#">About</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Dropdown</a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
@@ -91,29 +95,18 @@
           <a class="basic-life-link button-link link-secondary" id="btn-assessment"  href="#">Review Life Assessment</a>
         </div>
 
-          <ul class="nav-list list-unstyled collapse" appml-data="Categories">
-              <li class="nav-section" ><span class="nav-section-title"> Health and Security</span>
-                  <ul class="nav-section-list list-unstyled mx-4">
-                      <li class="nav-category" appml-repeat="Health"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
-                  </ul></li>
-              <li class="nav-section"><span class="nav-section-title">Wealth</span>
-                  <ul class="nav-section-list list-unstyled mx-4">
-                      <li class="nav-category" appml-repeat="Wealth"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
-                  </ul></li>
-              <li class="nav-section"><span class="nav-section-title">Relationships</span>
-                  <ul class="nav-section-list list-unstyled mx-4">
-                      <li class="nav-category" appml-repeat="Relationships"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
-                  </ul></li>
-              <li class="nav-section "><span class="nav-section-title">Lifestyle</span>
-                  <ul class="nav-section-list list-unstyled mx-4">
-                      <li class="nav-category" appml-repeat="Lifestyle"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
-                  </ul></li>
+          <ul class="nav-list list-unstyled collapse" data-source="Categories" data-identifier="Section">
+              <li class="nav-section"><span class="nav-section-title">{{Section}}</span>
+                <ul class="nav-section-list list-unstyled mx-4" data-source="Categories['{{Section}}']">
+                    <li class="nav-category"><nav-category category="{{Category}}">{{Category}}</nav-category></li>
+                </ul>
+              </li>
           </ul>
       </nav>
 
       <script>
           var Categories = {
-          "Health":[
+          "Health and Security":[
               {"Category":"Health","ID":"hh"},
               {"Category":"Safety and Security","ID":"hs"},
               ],
@@ -151,44 +144,29 @@
 
 
           <div class="content-card card border-secondary" id="priorities-card">
-            <h2>Assess your priorities in life</h2>
-            <p class="mx-3">Instructions:
-            <br>Do not take into consideration if you have achieved a lot or you need improvement on something. Just decide how important are these categories to you. 
-            <br>You can put at most 3 categories at "critical" significance and at most 3 at "high". 
-            </p>
+            <h2>Review your priorities in life</h2>
+              <hr>
+              <li>Do not take into consideration if you have achieved a lot or you need improvement on something. Just decide how important are these categories to you.</li> 
+              <li>Move the sliders accordingly. You can put at most 3 categories at "critical" significance and at most 6 at "critical" and "high" combined. </li>
+              <hr>
 
-            <form appml-data="Categories">
-              <h4>Health and Security</h4>
-              <ul class="list-unstyled mx-4">
-                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Health">
-                  <div class="">{{Category}}</div>
-                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
-                </li>
-              </ul>
-              <h4>Wealth</h4>
-              <ul class="list-unstyled mx-4">
-                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Wealth">
-                  <div class="">{{Category}}</div>
-                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
-                </li>
-              </ul>
-              <h4>Relationships</h4>
-              <ul class="list-unstyled mx-4">
-                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Relationships">
-                  <div class="">{{Category}}</div>
-                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
-                </li>
-              </ul>
-              <h4>Lifestyle</h4>
-              <ul class="list-unstyled mx-4">
-                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Lifestyle">
-                  <div class="">{{Category}}</div>
-                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
-                </li>
-              </ul>
-            </form>
+            <form>
+              <div data-source="Categories" data-identifier="section">
+              <h4>{{section}}</h4>
+              <ul class="list-unstyled mx-4" data-source="Categories['{{section}}']">
+                <li>
+                  <life-slider label="{{Category}}" slider-id="priority-cat-{{ID}}"></life-slider>
 
-          </div>
+              </li>
+              </ul>
+              </div>
+              
+              <button id="btn-ConfirmPriorities" class="btn btn-secondary btn-save center" type="submit" >Confirm Priorities</button>
+
+
+              </form>
+
+          </div>  <!-- priorities-card -->
 
 
 
