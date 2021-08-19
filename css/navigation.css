@@ -27,7 +27,7 @@ body{
     padding: 1rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     .main-structure{
         grid-template-columns: 450px 1fr;
         gap: 1rem;
@@ -54,13 +54,13 @@ body{
     background-color: inherit;
     border: inherit;
     color:inherit;
-    margin: inherit;
+    margin: 0;
     padding: 0.2rem 0.6rem;
     cursor: pointer; 
 }
 .nav-category-title:hover, .nav-activity-link:hover{
-    transition: 0.4s;
-    color: orangered;
+    transition: 0.1s;
+    color: var(--bs-secondary);
     /* background-color: black; */
 }
 
@@ -68,7 +68,7 @@ body{
     background-color: inherit;
     border: inherit;
     color:inherit;
-    margin: inherit;
+    margin: 0;
     padding: 0.2rem 0.6rem;
     /* transition: all 1s; */
 }
@@ -82,11 +82,16 @@ body{
 }
 
 .nav-section{
-    margin: 0.7rem;
+    margin: 0.5rem;
 }
 
 .nav-section-title{
     font-size: large;
+}
+
+.nav-category{
+    padding: 0;
+    margin: 0;
 }
 
 .nav-activity{
@@ -96,4 +101,25 @@ body{
 .nav-activity-link{
     text-decoration: none;
     cursor: pointer; 
+}
+
+
+
+
+
+/***************   CONTENT CARDS     ***************/
+
+.outer-card{
+    padding: 1rem;
+}
+
+.content-card{
+    padding: 2rem;
+}
+
+
+
+
+.assessment-slider, .assessment-selection{
+    width: 20vw;
 }

@@ -3,330 +3,560 @@
         {
             "Section": "Health and Security",
             "Category": "Health",
-            "Activity": "Nutrition"
+            "Activity": "Nutrition",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hh",
+            "tbl Activities.cid": "hhn",
+            "Description": "Πλάνο για τη διατροφή."
         },
         {
             "Section": "Health and Security",
             "Category": "Health",
-            "Activity": "Physical activity"
+            "Activity": "Physical activity",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hh",
+            "tbl Activities.cid": "hhp",
+            "Description": "Πλάνο για τη γυμναστική. Αν η γυμναστική αποτελεί σημαντικό τμήμα της ζωής κάποιου, προτείνεται ο προβιβασμός της από δραστηριότητα σε κατηγορία στον τομέα Υγεία."
         },
         {
             "Section": "Health and Security",
             "Category": "Health",
-            "Activity": "Health monitoring"
+            "Activity": "Health monitoring",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hh",
+            "tbl Activities.cid": "hhm",
+            "Description": "Τακτική εξέταση αίματος ή άλλες εξετάσεις υγείας κρίσιμες ή σημαντικές (check-up, εξετάσεις μαστού ή προστάτη, κ.α.). Προτείνεται: Σημαντικότητα Κρίσιμη."
         },
         {
             "Section": "Health and Security",
             "Category": "Health",
-            "Activity": "Health inscurance"
+            "Activity": "Health inscurance",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hh",
+            "tbl Activities.cid": "hhi",
+            "Description": "Πρόνοια σε περίπτωση δυσάρεστων περιστατικών υγειάς."
         },
         {
             "Section": "Health and Security",
             "Category": "Health",
-            "Activity": "First aid knowlegde"
+            "Activity": "First aid knowlegde",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hh",
+            "tbl Activities.cid": "hhf",
+            "Description": "Γνώση πρώτων βοηθειών και βασικής υποστήριξης ζωής για τον ενδιαφερόμενο ή άτομα στα οποία θα μπορούσε να φανεί χρήσιμος."
         },
         {
             "Section": "Health and Security",
             "Category": "Health",
-            "Activity": "Sleep"
+            "Activity": "Sleep",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hh",
+            "tbl Activities.cid": "hhs",
+            "Description": "Πλάνο για αρκετό και υγιή ύπνο."
         },
         {
             "Section": "Health and Security",
             "Category": "Safety and Security",
-            "Activity": "Physical security"
+            "Activity": "Physical security",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hs",
+            "tbl Activities.cid": "hsp",
+            "Description": "Κατάλληλη φύλαξη περιουσίας, ώστε να αποφεύγεται όσο γίνεται η κλοπή / διάρρηξη από τρίτους."
         },
         {
             "Section": "Health and Security",
             "Category": "Safety and Security",
-            "Activity": "Self-defence"
+            "Activity": "Self-defence",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hs",
+            "tbl Activities.cid": "hss",
+            "Description": "Βασικές γνώσεις αυτοάμυνας με σκοπό την αποφυγή βίαιων σωματικών επιθέσεων."
         },
         {
             "Section": "Health and Security",
             "Category": "Safety and Security",
-            "Activity": "Disaster handling"
+            "Activity": "Disaster handling",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hs",
+            "tbl Activities.cid": "hsd",
+            "Description": "Γνώση προστασίας από περιπτώσεις σεισμού, πυρκαγιάς, ατυχήματα, και βασικές γνώσεις τύπου «οδηγός επιβίωσης»."
         },
         {
             "Section": "Health and Security",
             "Category": "Safety and Security",
-            "Activity": "Threat handling"
+            "Activity": "Threat handling",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hs",
+            "tbl Activities.cid": "hst",
+            "Description": "Τρόπος χειρισμού κάποιου ο οποίος έχει εισβάλει στην προσωπική περιουσία του ενδιαφερόμενου."
         },
         {
             "Section": "Health and Security",
             "Category": "Safety and Security",
-            "Activity": "Information security"
+            "Activity": "Information security",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hs",
+            "tbl Activities.cid": "hsi",
+            "Description": "Προστασία των προσωπικών πληροφοριών (σε υπολογιστές ή προσωπικό αρχείο) από παραβίαση, κλοπή ή φυσική καταστροφή."
         },
         {
             "Section": "Health and Security",
             "Category": "Safety and Security",
-            "Activity": "Digital estate"
+            "Activity": "Digital estate",
+            "tbl Sections.cid": "h",
+            "tbl Categories.cid": "hs",
+            "tbl Activities.cid": "hse",
+            "Description": "Προγραμματισμός, ώστε σε περίπτωση σοβαρής ανικανότητας (ή θανάτου), του ενδιαφερόμενου, πληροφορίες όπως κωδικοί social media ή pin τραπεζών να μεταβιβαστούν σε κατάλληλα άτομα."
         },
         {
             "Section": "Wealth",
             "Category": "Financial Strategy",
-            "Activity": "Genercal financial plan"
+            "Activity": "Genercal financial plan",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wfg",
+            "Description": "Είναι η συγκέντρωση και ενοποίηση των υπολοίπων δραστηριοτήτων του Οικονομικού πλάνου με μια δομή, με σειρά προτεραιοτήτων, με χρονικό προγραμματισμό. Προτείνεται: Σημαντικότητα Κρίσιμη."
         },
         {
             "Section": "Wealth",
             "Category": "Financial Strategy",
-            "Activity": "Periodic financial statements"
+            "Activity": "Periodic financial statements",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wfs",
+            "Description": "Ισολογισμός και λογαριασμός Εξόδων. Προτείνεται η τριμηνιαία κατάρτιση ισολογισμού και η τήρηση αρχείου εσόδων – εξόδων με σκοπό τον μηνιαίο προγραμματισμό εξόδων."
         },
         {
             "Section": "Wealth",
             "Category": "Financial Strategy",
-            "Activity": "Emergency funds"
+            "Activity": "Emergency funds",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wfe"
         },
         {
             "Section": "Wealth",
             "Category": "Financial Strategy",
-            "Activity": "Debt handling"
+            "Activity": "Debt handling",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wfd"
         },
         {
             "Section": "Wealth",
             "Category": "Financial Strategy",
-            "Activity": "Financial protection and Insurance"
+            "Activity": "Financial protection and Insurance",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wfi",
+            "Description": "All kinds of insuranvce (life insurance as investent or protection)"
         },
         {
             "Section": "Wealth",
             "Category": "Financial Strategy",
-            "Activity": "Tax programming"
+            "Activity": "Tax programming",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wft"
         },
         {
             "Section": "Wealth",
             "Category": "Financial Strategy",
-            "Activity": "Pension plan"
+            "Activity": "Pension plan",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wfp",
+            "Description": "Πλάνο για τα τελευταία στάδια της ζωής."
+        },
+        {
+            "Section": "Wealth",
+            "Category": "Financial Strategy",
+            "Activity": "Estate plan",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wf",
+            "tbl Activities.cid": "wfq",
+            "Description": "Προγραμματισμός για την απόδοση περιουσίας μετά το τέλος της ζωής."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Work skills"
+            "Activity": "Work skills",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "www",
+            "Description": "Στοιχεία που θα φαίνονται ωραία στο βιογραφικό, όπως πιστοποιήσεις ή ικανότητες όπως business etiquette, project management, ή περιφερειακές  δεξιότητες όπως γνώση πρώτων βοηθειών οι οποίες θα βοηθήσουν στην εικόνα του ενδιαφερόμενου."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Emploee or professional skills"
+            "Activity": "Emploee or professional skills",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "wwe",
+            "Description": "Αναφέρεται στη στρατηγική κάποιου ο οποίος ήδη εργάζεται. Για παράδειγμα, η δημιουργία αναγκαιότητάς του μέσα στην εταιρία ή στους πελάτες του, οι σχέσεις του με τους συνεργάτες - πελάτες του, ή η δημιουργία δικτύου επαφών."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Professional profile"
+            "Activity": "Professional profile",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "wwp",
+            "Description": "Εικόνα του υπαλλήλου ή του επαγγελματία στο διαδίκτυο, το βιογραφικό του, οι business cards του κλπ."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Professional image"
+            "Activity": "Professional image",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "wwi",
+            "Description": "Ο τρόπος συμπεριφοράς του όσον αφορά τις επαγγελματικές του δραστηριότητες. Η στάση του σώματος, το πάθος του, η πειθώ του, η αντιμετώπιση κρίσιμων καταστάσεων κ.α."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Attracting employers or customers"
+            "Activity": "Attracting employers or customers",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "wwa",
+            "Description": "Πλάνο για βελτίωση της υπάρχουσας κατάστασης."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Colleague relationships"
+            "Activity": "Colleague relationships",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "wwc",
+            "Description": "Βελτίωση των εργασιακών σχέσεων με βάση τη στρατηγική."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Network and mentors"
+            "Activity": "Network and mentors",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "wwn",
+            "Description": "Πολύ σημαντική δραστηριότητα. Προτείνεται: Σημαντικότητα Υψηλή."
         },
         {
             "Section": "Wealth",
             "Category": "Work",
-            "Activity": "Study for work and Improvement"
+            "Activity": "Study for work and Improvement",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "ww",
+            "tbl Activities.cid": "wws",
+            "Description": "Αναζήτηση νέων τρόπων ανέλιξης, ανάλογα το πεδίο ενδιαφέροντος."
         },
         {
             "Section": "Wealth",
             "Category": "Investments",
-            "Activity": "Stock exchange and Paper assets"
+            "Activity": "Stock exchange and Paper assets",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wi",
+            "tbl Activities.cid": "wis"
         },
         {
             "Section": "Wealth",
             "Category": "Investments",
-            "Activity": "Real estate"
+            "Activity": "Real estate",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wi",
+            "tbl Activities.cid": "wir"
         },
         {
             "Section": "Wealth",
             "Category": "Investments",
-            "Activity": "Business or company stocks"
+            "Activity": "Business or company stocks",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wi",
+            "tbl Activities.cid": "wib"
         },
         {
             "Section": "Wealth",
             "Category": "Investments",
-            "Activity": "Investment education & placement"
+            "Activity": "Investment education & placement",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wi",
+            "tbl Activities.cid": "wii",
+            "Description": "Μελέτη και κατανόηση διάφορων επενδυτικών προϊόντων. Γνώση θεωρίας επενδύσεων."
         },
         {
             "Section": "Wealth",
             "Category": "Products and Services",
-            "Activity": "Products, Services, Books, Software, Patents"
+            "Activity": "Products, Services, Books, Software, Patents",
+            "tbl Sections.cid": "w",
+            "tbl Categories.cid": "wp",
+            "tbl Activities.cid": "wpp"
         },
         {
             "Section": "Relationships",
             "Category": "Self Image",
-            "Activity": "Self image"
+            "Activity": "Self image",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "ri",
+            "tbl Activities.cid": "rii",
+            "Description": "Καθορισμός της εμφάνισης, του στιλ ντυσίματος και της στάσης σώματος με βάση την προσδωκώμενη εικόνα."
         },
         {
             "Section": "Relationships",
             "Category": "Self Image",
-            "Activity": "Style & Character"
+            "Activity": "Style and Character",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "ri",
+            "tbl Activities.cid": "ris",
+            "Description": "Καθορισμός του τρόπου συμπεριφοράς και προσωπικής νοοτροπίας."
         },
         {
             "Section": "Relationships",
             "Category": "Self Image",
-            "Activity": "Online social networks"
+            "Activity": "Online social networks",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "ri",
+            "tbl Activities.cid": "rio",
+            "Description": "Διαχείριση της εικόνας στα κοινωνικά δίκτυα στο διαδίκτυο."
         },
         {
             "Section": "Relationships",
             "Category": "Family",
-            "Activity": "Own family"
+            "Activity": "Own family",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "rf",
+            "tbl Activities.cid": "rfo",
+            "Description": "Προγραμματισμός και στόχοι για την οικογένεια του ενδιαφερόμενου."
         },
         {
             "Section": "Relationships",
             "Category": "Family",
-            "Activity": "Parent family"
+            "Activity": "Parent family",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "rf",
+            "tbl Activities.cid": "rfp",
+            "Description": "Σχέσεις με την πατρική οικογένεια."
         },
         {
             "Section": "Relationships",
             "Category": "Sexual",
-            "Activity": "Attraction & Success"
+            "Activity": "Attraction and Success",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "rs",
+            "tbl Activities.cid": "rsa",
+            "Description": "Δημιουργία μιας γοητευτικής προσωπικότητας και ένος πλάνου αποπλάνησης."
         },
         {
             "Section": "Relationships",
             "Category": "Sexual",
-            "Activity": "Relationship management"
+            "Activity": "Relationship management",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "rs",
+            "tbl Activities.cid": "rsr",
+            "Description": "Διαχείριση ερωτικών σχέσεων. Εφαρμόζεται όντας σε μια σχέση. Στόχοι για την πορεία."
         },
         {
             "Section": "Relationships",
             "Category": "Social",
-            "Activity": "Friends"
+            "Activity": "Friends",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "rc",
+            "tbl Activities.cid": "rcf",
+            "Description": "Σχέσεις με φίλους. Τακτικές συναντήσεις, επικοδομητική επικοινωνία κλπ."
         },
         {
             "Section": "Relationships",
             "Category": "Social",
-            "Activity": "Social networking"
+            "Activity": "Social networking",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "rc",
+            "tbl Activities.cid": "rcn",
+            "Description": "Διεύρυνση και διατήρηση των κοινωνικών δικτύων."
         },
         {
             "Section": "Relationships",
             "Category": "Social",
-            "Activity": "Social skills"
+            "Activity": "Social skills",
+            "tbl Sections.cid": "r",
+            "tbl Categories.cid": "rc",
+            "tbl Activities.cid": "rcs",
+            "Description": "Ανάπτυξη δεξιοτήτων επικοινωνίας, διαπραγματεύσεις και άλλες κοινωνικές δεξιότητες."
         },
         {
             "Section": "Lifestyle",
             "Category": "Everyday Life",
-            "Activity": "Everyday life"
+            "Activity": "Everyday life",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "ll",
+            "tbl Activities.cid": "lle"
         },
         {
             "Section": "Lifestyle",
             "Category": "Everyday Life",
-            "Activity": "Fun"
+            "Activity": "Fun",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "ll",
+            "tbl Activities.cid": "llf"
         },
         {
             "Section": "Lifestyle",
             "Category": "Everyday Life",
-            "Activity": "Vacation"
+            "Activity": "Vacation",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "ll",
+            "tbl Activities.cid": "llv"
         },
         {
             "Section": "Lifestyle",
             "Category": "Everyday Life",
-            "Activity": "Ideal day"
+            "Activity": "Ideal day",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "ll",
+            "tbl Activities.cid": "lli"
         },
         {
             "Section": "Lifestyle",
             "Category": "Productivity",
-            "Activity": "Life Plan"
+            "Activity": "Life Plan",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "lp",
+            "tbl Activities.cid": "lpl"
         },
         {
             "Section": "Lifestyle",
             "Category": "Productivity",
-            "Activity": "Goals"
+            "Activity": "Goals",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "lp",
+            "tbl Activities.cid": "lpg"
         },
         {
             "Section": "Lifestyle",
             "Category": "Productivity",
-            "Activity": "Organization & Time management"
+            "Activity": "Organization and Time management",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "lp",
+            "tbl Activities.cid": "lpo"
         },
         {
             "Section": "Lifestyle",
             "Category": "Productivity",
-            "Activity": "Periodic routines"
+            "Activity": "Periodic routines",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "lp",
+            "tbl Activities.cid": "lpp"
         },
         {
             "Section": "Lifestyle",
             "Category": "Improvement",
-            "Activity": "Personal study"
+            "Activity": "Personal study",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "li",
+            "tbl Activities.cid": "lip"
         },
         {
             "Section": "Lifestyle",
             "Category": "Improvement",
-            "Activity": "Self improvement"
+            "Activity": "Self improvement",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "li",
+            "tbl Activities.cid": "lis"
         },
         {
             "Section": "Lifestyle",
             "Category": "Hobbies",
-            "Activity": "Hobbies"
+            "Activity": "Hobbies",
+            "tbl Sections.cid": "l",
+            "tbl Categories.cid": "lh",
+            "tbl Activities.cid": "lhh"
+        }
+    ],
+    "Sections": [
+        {
+            "CID": "h",
+            "Section": "Health and Security"
         },
         {
-            "Section": "Wealth",
-            "Category": "Financial Strategy",
-            "Activity": "Estate plan"
+            "CID": "w",
+            "Section": "Wealth"
+        },
+        {
+            "CID": "r",
+            "Section": "Relationships"
+        },
+        {
+            "CID": "l",
+            "Section": "Lifestyle"
         }
     ],
     "Categories": [
         {
             "Section": "Health and Security",
-            "Category": "Health"
+            "Category": "Health",
+            "cid": "hh"
         },
         {
             "Section": "Health and Security",
-            "Category": "Safety and Security"
+            "Category": "Safety and Security",
+            "cid": "hs"
         },
         {
             "Section": "Wealth",
-            "Category": "Financial Strategy"
+            "Category": "Financial Strategy",
+            "cid": "wf"
         },
         {
             "Section": "Wealth",
-            "Category": "Work"
+            "Category": "Work",
+            "cid": "ww"
         },
         {
             "Section": "Wealth",
-            "Category": "Investments"
+            "Category": "Investments",
+            "cid": "wi"
         },
         {
             "Section": "Wealth",
-            "Category": "Products and Services"
+            "Category": "Products and Services",
+            "cid": "wp"
         },
         {
             "Section": "Relationships",
-            "Category": "Self Image"
+            "Category": "Self Image",
+            "cid": "ri"
         },
         {
             "Section": "Relationships",
-            "Category": "Family"
+            "Category": "Family",
+            "cid": "rf"
         },
         {
             "Section": "Relationships",
-            "Category": "Sexual"
+            "Category": "Sexual",
+            "cid": "rs"
         },
         {
             "Section": "Relationships",
-            "Category": "Social"
+            "Category": "Social",
+            "cid": "rc"
         },
         {
             "Section": "Lifestyle",
-            "Category": "Everyday Life"
+            "Category": "Everyday Life",
+            "cid": "ll"
         },
         {
             "Section": "Lifestyle",
-            "Category": "Productivity"
+            "Category": "Productivity",
+            "cid": "lp"
         },
         {
             "Section": "Lifestyle",
-            "Category": "Improvement"
+            "Category": "Improvement",
+            "cid": "li"
         },
         {
             "Section": "Lifestyle",
-            "Category": "Hobbies"
+            "Category": "Hobbies",
+            "cid": "lh"
         }
     ]
 }

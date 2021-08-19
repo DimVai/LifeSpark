@@ -49,6 +49,12 @@ let objectQuery = (selectField,fromObject,whereVariable,whereEquals,unique=false
 
 let navToggleButton = `<button class="btn-nav rounded dropdown-toggle"></button>`;
 
+
+
+$(window).on('load',()=>{
+    $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/microtip.css') );
+});
+
 $.getScript( "https://www.w3schools.com/appml/2.0.3/appml.js", function afterAppML() {
 
     $.getJSON("js/categorization.json", function afterCategorization(jsonObj) {
@@ -70,16 +76,30 @@ $.getScript( "https://www.w3schools.com/appml/2.0.3/appml.js", function afterApp
     
         $(".nav-category-list").hide();
         $(navToggleButton).insertAfter(".nav-category-title");
-        $(".nav-list").addClass('show');
+        $('.nav-basic-life').removeClass('d-none');
+        $('.nav-list').addClass('show');
 
 
         //$(".btn-nav").on("click",function(){$(this).next("ul").slideToggle(($(this).next("ul").children().length)*300)});
-        $(".btn-nav").on("click",function(){
+        $('.btn-nav').on('click',function(){
             $(this).next("ul").slideToggle(400);
             $(this).toggleClass('upside-down');
         });
+
+        $('#btn-priorities').on('click',function(){
+            $('.content-card').hide();
+            $('#priorities-card').show();
+        });
+
+        $('#btn-assessment').on('click',function(){
+            $('.content-card').hide();
+            //$('#assessment-card').show();
+        });
     
     
+
+
+
     });
 
   });

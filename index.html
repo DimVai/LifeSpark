@@ -21,12 +21,12 @@
 
 
 </head>
-<body class="scrollable p-lg-3">
+<body class="scrollable p-xl-3">
     <div class="container ">
 
 
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary sticky">
             <div class="container-fluid">
 
               <a class="navbar-brand" href="#">LifeSpark</a>
@@ -75,7 +75,7 @@
     
       <div class="nav-heading standard-inline-2-structure">
         <h2 class="card-header">Life Categorization</h2>
-        <button class="btn btn-secondary d-lg-none m-2" type="button" data-bs-toggle="collapse" data-bs-target="#cat-navigation">
+        <button class="btn btn-secondary d-xl-none m-2" type="button" data-bs-toggle="collapse" data-bs-target="#cat-navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewbox="0 0 16 16">
                 <title>Expand</title>
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
@@ -84,11 +84,11 @@
 
 
 
-      <nav class="navigation bd-links collapse d-lg-block" id="cat-navigation">
+      <nav class="navigation bd-links collapse d-xl-block" id="cat-navigation">
 
-        <div class="nav-basic-life m-3 d-flex flex-column card">
-          <a class="basic-life-link link-secondary" href="#">Review Life priorities</a>
-          <a class="basic-life-link link-secondary" href="#">Life Assessment</a>
+        <div class="nav-basic-life m-2 d-flex flex-column card d-none">
+          <a class="basic-life-link button-link link-secondary" id="btn-priorities" href="#">Review Life Priorities</a>
+          <a class="basic-life-link button-link link-secondary" id="btn-assessment"  href="#">Review Life Assessment</a>
         </div>
 
           <ul class="nav-list list-unstyled collapse" appml-data="Categories">
@@ -114,26 +114,26 @@
       <script>
           var Categories = {
           "Health":[
-              {"Category":"Health","ID":"HH"},
-              {"Category":"Safety and Security","ID":"HS"},
+              {"Category":"Health","ID":"hh"},
+              {"Category":"Safety and Security","ID":"hs"},
               ],
           "Wealth":[
-              {"Category":"Financial Strategy","ID":"WF"},
-              {"Category":"Work","ID":"WW"},
-              {"Category":"Investments","ID":"WI"},
-              {"Category":"Products and Services","ID":"WP"},
+              {"Category":"Financial Strategy","ID":"wf"},
+              {"Category":"Work","ID":"ww"},
+              {"Category":"Investments","ID":"wi"},
+              {"Category":"Products and Services","ID":"wp"},
           ],
           "Relationships":[
-              {"Category":"Self Image","ID":"RS"},
-              {"Category":"Family","ID":"RF"},
-              {"Category":"Sexual","ID":"RS"},
-              {"Category":"Social","ID":"RC"},
+              {"Category":"Self Image","ID":"ri"},
+              {"Category":"Family","ID":"rf"},
+              {"Category":"Sexual","ID":"rs"},
+              {"Category":"Social","ID":"rc"},
           ],
           "Lifestyle":[
-              {"Category":"Everyday Life","ID":"LL"},
-              {"Category":"Productivity","ID":"LP"},
-              {"Category":"Improvement","ID":"LI"},
-              {"Category":"Hobbies","ID":"LH"},
+              {"Category":"Everyday Life","ID":"ll"},
+              {"Category":"Productivity","ID":"lp"},
+              {"Category":"Improvement","ID":"li"},
+              {"Category":"Hobbies","ID":"lh"},
           ]
           };
       </script>
@@ -145,8 +145,67 @@
 
     <main class="main card bg-dark border-info">
       <div class="app-content">
-        <div class="card bg-dark border-secondary">
-          <h1>Content</h1>
+        <div class="outer-card bg-dark border-secondary">
+          <!-- <h1>Content</h1> -->
+
+
+
+          <div class="content-card card border-secondary" id="priorities-card">
+            <h2>Assess your priorities in life</h2>
+            <p class="mx-3">Instructions:
+            <br>Do not take into consideration if you have achieved a lot or you need improvement on something. Just decide how important are these categories to you. 
+            <br>You can put at most 3 categories at "critical" significance and at most 3 at "high". 
+            </p>
+
+            <form appml-data="Categories">
+              <h4>Health and Security</h4>
+              <ul class="list-unstyled mx-4">
+                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Health">
+                  <div class="">{{Category}}</div>
+                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
+                </li>
+              </ul>
+              <h4>Wealth</h4>
+              <ul class="list-unstyled mx-4">
+                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Wealth">
+                  <div class="">{{Category}}</div>
+                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
+                </li>
+              </ul>
+              <h4>Relationships</h4>
+              <ul class="list-unstyled mx-4">
+                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Relationships">
+                  <div class="">{{Category}}</div>
+                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
+                </li>
+              </ul>
+              <h4>Lifestyle</h4>
+              <ul class="list-unstyled mx-4">
+                <li class="d-flex justify-content-between slim-container-sm" appml-repeat="Lifestyle">
+                  <div class="">{{Category}}</div>
+                  <input type="range" class="form-range assessment-slider" id="assessment-value-cat-{{ID}}" min="1" max="4" value="3">
+                </li>
+              </ul>
+            </form>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
       </div>
 

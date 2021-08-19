@@ -1,0 +1,143 @@
+/* -------------------------------------------------------------------
+  Microtip
+
+  Modern, lightweight css-only tooltips
+  Just 1kb minified and gzipped
+
+  @author Ghosh
+  @package Microtip
+
+----------------------------------------------------------------------
+  1. Base Styles
+  2. Direction Modifiers
+  3. Position Modifiers
+--------------------------------------------------------------------*/
+
+/* ---- [0]   Customization by ChordPage  ----- */ 
+:root {
+  --microtip-fontsize: small;
+  --microtip-transition-delay: 0.4s;
+  --microtip-transition-duration: 0.4s;
+}
+
+/* ------------------------------------------------
+  [1] Base Styles
+-------------------------------------------------*/
+
+[data-label] {
+  position: relative;
+  z-index: 100;
+}
+
+[data-label]::before,
+[data-label]::after {
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--microtip-transition-duration, 0.2s) var(--microtip-transition-easing, ease-in-out) var(--microtip-transition-delay, 0s);
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1000;
+  transform-origin: top;
+}
+/*
+[data-label]::before {
+  background-size: 100% auto !important;
+  content: "";
+}*/
+
+[data-label]::after {
+  background: rgba(17, 17, 17, .9);
+  border-radius: 4px;
+  color: #ffffff;
+  content: attr(data-label);
+  font-family: 'Cambria';
+  font-size: var(--microtip-fontsize);
+  font-weight: var(--microtip-font-weight, normal);
+  text-transform: var(--microtip-text-transform, none);
+  /*padding: .5em 1em;*/
+  padding: 2px 10px;      /*ChordPage*/
+  white-space: nowrap;
+  box-sizing: content-box;
+}
+
+[data-label]:hover::before,
+[data-label]:hover::after,
+[data-label]:focus::before,
+[data-label]:focus::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+[data-label]::before:hover,
+[data-label]::after:hover{
+  opacity: 0;
+}
+
+
+
+/* ------------------------------------------------
+  [2] Position Modifiers
+-------------------------------------------------*/
+
+
+[data-microtip-position|="top"]::after {
+  margin-bottom: 1em;
+  /*Πρέπει να αφήνει έστω και 1px απόσταση από το κουμπί, αλλιώς κάνει bug στο γρήγορο hover 
+  (όταν πας γρήγορα από το κουμπί προς το tooltip, και εξακολουθεί να το θεωρεί hover του κουμπιού 
+  ενώ εσύ είσαι σε άλλο κουμπί κανονικά). και τώρα γίνεται αλλά πολύ σπάνια*/
+}
+
+[data-microtip-position|="top"]::after {
+  transform: translate3d(-50%, 10px, 0);
+  bottom: 100%;
+  left: 50%;
+}
+
+[data-microtip-position="top"]:hover::after {
+  transform: translate3d(-50%, 0px, 0);
+}
+
+[data-microtip-position="top-right"]::after {
+  transform: translate3d(calc(0% + -16px), 10px, 0);
+  bottom: 100%;
+}
+
+[data-microtip-position="top-right"]:hover::after {
+  transform: translate3d(calc(0% + -16px), 0px, 0);
+}
+
+
+/* ------------------------------------------------
+  [3] Size
+-------------------------------------------------*/
+[data-microtip-size="small"]::after {
+  white-space: initial;
+  width: 80px;
+}
+
+[data-microtip-size="medium"]::after {
+  white-space: initial;
+  width: 150px;
+}
+
+[data-microtip-size="large"]::after {
+  white-space: initial;
+  width: 260px;
+}
+
+/* ------------------------------------------------
+  [3] Color
+-------------------------------------------------*/
+
+[data-microtip-color="red"]:after {
+  background-color: red;
+}
+[data-microtip-color="blue"]:after {
+  background-color: blue;
+}
+[data-microtip-background="green"]:after {
+  background-color: green;
+}
